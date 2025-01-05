@@ -1,15 +1,17 @@
 from turtle import Turtle, Screen
 import colorgram, random
 
-# colors = colorgram.extract('image.jpg', 40)
-#
-# color_list = []
-# for i in range(len(colors)):
-#     rgb = colors[i].rgb
-#     rgb_tuple = (rgb.r, rgb.g, rgb.b)
-#     color_list.append(rgb_tuple)
-#
-# print(color_list)
+colors = colorgram.extract('image.jpg', 40)
+
+color_list = []
+for i in range(len(colors)):
+    rgb = colors[i].rgb
+    rgb_tuple = (rgb.r, rgb.g, rgb.b)
+    color_list.append(rgb_tuple)
+
+print(color_list)
+
+
 screen = Screen()
 screen.colormode(255)
 
